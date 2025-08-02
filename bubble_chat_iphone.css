@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+/* iPhone Message Bubble Style */
+.highlight-chat {
+	background: #e5e5ea;
+	color: black;
+	border-radius: 20px;
+	padding: 2rem 2rem;
+	position: relative;
+	margin-bottom: 1rem;
+	border: none;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	max-width: 80%;
+	margin-left: 60px;
+	animation: slideUp var(--animation-timing);
+}
+
+/* Donation Message with Gradient Bubble */
+.highlight-chat.dono {
+	background: linear-gradient(135deg, #00c6ff, #0072ff);
+	color: white;
+}
+
+/* Bubble Tail using pseudo-element */
+.highlight-chat::before {
+	content: "";
+	position: absolute;
+	left: -10px;
+	bottom: 20px;
+	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-right: 10px solid #e5e5ea;
+}
+
+.highlight-chat.dono::before {
+	border-right: 10px solid #0072ff;
+}
+
+
+/* Profile Avatar on the left */
+.hl-title {
+	display: flex;
+	align-items: flex-start;
+	gap: 0.75rem;
+	margin-bottom: 0.5rem;
+}
+
+.hl-img {
+	flex-shrink: 0;
+}
+
+.hl-profile-pic {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	object-fit: cover;
+	border: none;
+	box-shadow: 0 0 0 2px white;
+}
+
+/* Name Style */
+.hl-name {
+	font-weight: 600;
+	font-size: 1.2rem;
+	color: #fff;
+	margin-top: 4px;
+	background: none !important; /* Pastikan tidak ada background */
+}
+
+/* Message Text */
+.hl-message {
+	font-size: 1.4rem;
+	line-height: 1.4;
+	word-break: break-word;
+	margin-left: 0;
+	color: inherit;
+}
+
+/* Adjust badge position */
+.hl-badges {
+	margin-left: 0.25rem;
+}
+
+/* Donation highlight */
+.hl-donation {
+	margin-left: 0.5rem;
+	font-weight: 600;
+	color: #fff;
+	background: rgba(0, 0, 0, 0.3);
+	border-radius: 999px;
+	padding: 0.2rem 0.75rem;
+	font-size: 0.9rem;
+}
+
+/* CSS BY RUANG VISUAL AMIK */
+/* CSS INI TIDAK UNTUK DI SEBARKAN */
+/* JULI 2025 */
